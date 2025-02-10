@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:theme="@style/Theme.Goibibo.Toolbar"
+        android:id="@+id/toolbar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_scrollFlags="5"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/qna_close"
+                android:background="@drawable/item_selector"
+                android:padding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_qna_black"/>
+            <EditText
+                android:textSize="16sp" android:textColor="@color/black" android:textColorHighlight="@color/gocars_date_separator" android:textColorHint="@color/gocars_review_text_color" android:ellipsize="end" android:id="@+id/ask_question" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Search your question ?" android:maxLines="1" android:inputType="text" android:textCursorDrawable="@drawable/black_cursor_drawable" android:layout_toStartOf="@+id/toolbar_progressbar" android:layout_toEndOf="@+id/qna_close">
+                <requestFocus/>
+            </EditText>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@+id/view_separator" android:background="@drawable/view_separator" android:layout_width="match_parent" android:layout_height="5dp" android:layout_below="@+id/toolbar"/>
+</RelativeLayout>

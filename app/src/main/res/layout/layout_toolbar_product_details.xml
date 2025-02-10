@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:id="@+id/toolbar"
+    android:tag="layout/layout_toolbar_0"
+    android:background="@color/colorPrimary1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/imageBack"
+            android:tag="binding_2"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_3sdp"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back_arrow_theme"
+            app:tint="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:id="@+id/actv_goods_list"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:text="ooooooo jjjjjj jjjjjjj jjjjj jjjjj jjjjjj uuyuy yuyuyu"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="-5dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:fontFamily="@font/avenir_bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageBack"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/rl_share"
+                android:visibility="visible"
+                android:padding="@dimen/_3sdp"
+                android:layout_width="40dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/edtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:src="@drawable/ic_share_24"
+                    app:tint="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="@dimen/_3sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/rl_search"
+                android:visibility="visible"
+                android:layout_width="40dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    app:tint="@color/white"
+                    android:id="@+id/img_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_search" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/rl_search_cart_container"
+                android:visibility="visible"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <ImageView
+                    app:tint="@color/white"
+                    android:padding="9dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_shopping_cart_24"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/cart_num"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/shape_round_yellow_white"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    android:text="45"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

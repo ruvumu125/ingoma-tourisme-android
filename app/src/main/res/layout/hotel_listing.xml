@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--cfr activity_hotel_srp-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:id="@+id/detail_activity_lyt"
+    android:tag="layout/activity_hotel_srp_0"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:orientation="vertical"
+        android:id="@+id/htab_appbar"
+        android:background="?attr/toolbarBG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="6dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/lytCollapsing"
+            android:tag="binding_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="enterAlways">
+
+            <include
+                android:orientation="vertical"
+                android:id="@+id/lytParentEdtRv"
+                android:background="?attr/toolbarBG"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/htl_dtl_toolbar_height"
+                app:layout_scrollFlags="enterAlways"
+                layout="@layout/dialog_edit_hotel_booking_ok"/>
+
+            <LinearLayout
+                android:gravity="top"
+                android:id="@+id/lytToolbar"
+                android:tag="binding_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="none"
+                app:layout_scrollFlags="enterAlways">
+                <include
+                    android:id="@+id/toolbarLyt"
+                    layout="@layout/hotels_getaways_srp_toolbar"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="top"
+                android:id="@+id/lytToolbarkk"
+                android:orientation="horizontal"
+                android:tag="binding_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="none"
+                app:layout_scrollFlags="enterAlways">
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSrpList"
+        android:background="@color/bg_htl_dtls"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:nestedScrollingEnabled="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+    <include
+        android:layout_gravity="bottom"
+        android:id="@+id/srp_bottom_navigationV2"
+        android:visibility="visible"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginVertical="20dp"
+        app:layout_anchorGravity="bottom"
+        layout="@layout/view_srp_bottom_navigation_ok"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

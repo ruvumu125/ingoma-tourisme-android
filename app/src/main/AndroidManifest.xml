@@ -10,8 +10,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.IngomaTourism"
+        android:theme="@style/Theme.Goibibo"
         tools:targetApi="31">
+        <activity
+            android:name=".HotelDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotelListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EssaieActivity"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_HotelGoibiboDefault" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

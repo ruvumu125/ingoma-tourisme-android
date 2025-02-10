@@ -31,6 +31,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 }
 
@@ -43,7 +44,17 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+    implementation(libs.activity)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    implementation ("androidx.databinding:databinding-runtime:8.1.0")
+    implementation ("com.facebook.fresco:fresco:3.0.0")
+    implementation ("com.facebook.shimmer:shimmer:0.5.0")
+    implementation ("me.relex:circleindicator:2.1.6")
+    implementation ("com.github.smarteist:autoimageslider:1.4.0")
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+
 }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:id="@+id/root_Layout"
+    android:tag="layout/item_day_use_srp_filter_generic_0"
+    android:background="@drawable/white_rounded_rect_8p_skyblue_border_bg"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="#141823"
+        android:gravity="center"
+        android:id="@+id/tvFilterItem"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:paddingStart="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextStyles.Label.Small.w1"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:gravity="center"
+        android:id="@+id/star"
+        android:visibility="visible"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFilterItem"
+        app:layout_constraintLeft_toRightOf="@+id/tvFilterItem"
+        app:layout_constraintRight_toRightOf="0"
+        app:layout_constraintTop_toTopOf="@+id/tvFilterItem"
+        app:srcCompat="@drawable/ic_filter"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

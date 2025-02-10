@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.solver.ingomatourism.utils.interestingtitlebar.CustomTitleBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:maxHeight="25dp"
+    android:minHeight="25dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_goods_details_bar_title"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/ll_goods_detail_bar_product"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/title_bar_title_text_size"
+                android:textColor="@color/selector_color_title"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@+id/tv_goods_detail_bar_product"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Produit"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="1"/>
+            <ImageView
+                android:id="@+id/iv_line_goods_detail_bar_product"
+                android:visibility="visible"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:src="@color/app_head_bg"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/ll_goods_detail_bar_avis_utilisateur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:textSize="@dimen/title_bar_title_text_size"
+                android:textColor="@color/selector_color_title"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@+id/tv_goods_detail_bar_detail"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vous pourriez aussi aimer"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="1"/>
+            <ImageView
+                android:id="@+id/iv_line_goods_detail_bar_avis"
+                android:background="@color/app_head_bg"
+                android:visibility="invisible"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.solver.ingomatourism.utils.interestingtitlebar.CustomTitleBar>

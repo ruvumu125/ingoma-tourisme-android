@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/bg_sort_button"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tv_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="16sp"
+        android:textColor="@color/htl_color_grey"
+        android:paddingEnd="4dp"/>
+
+    <ImageView
+        android:id="@+id/iv_sort_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:tint="@color/htl_color_grey"
+        android:src="@drawable/ic_filters_location_gray"/>
+</LinearLayout>

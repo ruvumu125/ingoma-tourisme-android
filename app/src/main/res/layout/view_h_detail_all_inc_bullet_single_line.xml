@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.androidly.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:tag="layout/view_h_detail_all_inc_bullet_single_line_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bulletPnt"
+        android:layout_width="4.5dp"
+        android:layout_height="4.5dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/htl_bullet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvText"/>
+    <TextView
+        android:textColor="@color/dark_black_title"
+        android:id="@+id/tvText"
+        android:layout_width="0dp"
+        android:text="@string/app_name"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:includeFontPadding="false"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bulletPnt"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextStyles.Label.Small.w1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

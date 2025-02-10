@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/llCustmerRating" android:tag="layout/layout_hotel_rating_v2_0" android:padding="@dimen/margin_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:tag="binding_1" android:layout_width="@dimen/image_dimen_small" android:layout_height="@dimen/image_dimen_xxsmall" android:src="0x7f080707" android:layout_marginEnd="@dimen/margin_extra_xtiny"/>
+    <com.mmt.uikit.MmtTextView android:textSize="@dimen/htl_text_size_small" android:id="@+id/tvCustmerRating" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontFamily="@font/lato_bold"/>
+    <com.mmt.uikit.MmtTextView android:textSize="@dimen/htl_text_size_tiny" android:layout_gravity="center_vertical" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/margin_extra_tiny" app:fontFamily="@font/lato_regular"/>
+</LinearLayout>

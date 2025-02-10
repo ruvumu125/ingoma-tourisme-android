@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="horizontal"
+    android:tag="layout/item_h_detail_persuasion_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/icon"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:maxWidth="16dp"
+        android:maxHeight="16dp"
+        app:srcCompat="@drawable/ic_htl_room_am_tick"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="#222222"
+        android:ellipsize="end"
+        android:gravity="top"
+        android:layout_gravity="top"
+        android:text="@string/app_name"
+        android:id="@+id/persuasion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:includeFontPadding="false"
+        android:layout_marginHorizontal="8dp"
+        style="@style/TextStyles.Label.Small.w1"/>
+</LinearLayout>
